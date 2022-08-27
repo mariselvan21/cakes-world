@@ -2,6 +2,7 @@
 import './user-product.css'
 import {useState} from 'react';
 
+
 function UserInputProducts(props){
     // const[name,setName]=useState("");
     // const[price,setPrice]=useState();
@@ -39,7 +40,7 @@ function UserInputProducts(props){
 
     const updateValues=(event) =>{
         event.preventDefault();
-        console.log(allValues);
+        props.updateList(allValues);
     }
 
     
