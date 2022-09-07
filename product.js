@@ -13,6 +13,8 @@ function Product(props){
         setDisable(true);
     }
 
+    const [x,setX] = useState("heart")
+
 
     
     return(
@@ -26,6 +28,13 @@ function Product(props){
                 <p>{props.detatils}</p>
                 <p>{props.offer}%offer</p>
                 <button onClick={changePrice} disabled={dis}>click</button>
+                <p className={x} onClick={()=>{
+                    if(x == "heart"){
+                        setX("heart liked")
+                    }else{
+                        setX("heart")
+                    }
+                }}>&#9829;</p>
             </div>
         </div>
     )

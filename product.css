@@ -27,3 +27,16 @@
     padding-left: 20px;
 }
 
+.heart{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.heart:hover{
+    font-size: 32px;
+}
+
+.liked{
+    color: red;
+}
+
